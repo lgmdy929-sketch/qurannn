@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اختيار نطاق الحفظ"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم الآية الأولى:"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+
+        <EditText
+            android:id="@+id/editTextStartAyah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="أدخل رقم الآية الأولى"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم الآية الأخيرة:"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+
+        <EditText
+            android:id="@+id/editTextEndAyah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="أدخل رقم الآية الأخيرة"
+            android:inputType="number"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عدد مرات التكرار لكل آية:"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+
+        <NumberPicker
+            android:id="@+id/numberPickerRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ابدأ الحفظ"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رجوع"
+            android:backgroundTint="#757575"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
