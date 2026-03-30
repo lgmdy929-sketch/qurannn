@@ -31,6 +31,7 @@ public class SecondFragment extends Fragment {
         binding.numberPickerRepeat.setMaxValue(20);
         binding.numberPickerRepeat.setValue(3);
 
+        // زر ابدأ الحفظ - ينتقل لشاشة التكرار
         binding.buttonConfirm.setOnClickListener(v -> {
             String startStr = binding.editTextStartAyah.getText().toString().trim();
             String endStr = binding.editTextEndAyah.getText().toString().trim();
@@ -53,12 +54,17 @@ public class SecondFragment extends Fragment {
                 return;
             }
 
-            Toast.makeText(getContext(),
-                    "من آية " + startAyah + " إلى آية " + endAyah +
-                            " - التكرار: " + repeat + " مرات",
-                    Toast.LENGTH_LONG).show();
+            // إرسال البيانات لشاشة التكرار
+            Bundle bundle = new Bundle();
+            bundle.putInt("startAyah", startAyah);
+            bundle.putInt("endAyah", endAyah);
+            bundle.putInt("repeat", repeat);
+
+            NavHostFragment.findNavController(SecondFragment.this)
+                    .navigate(R.id.action_secondFragment_to_thirdFragment, bundle);
         });
 
+        // زر الرجوع
         binding.buttonBack.setOnClickListener(v ->
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate(R.id.action_secondFragment_to_firstFragment)
