@@ -4,35 +4,88 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp"
-    android:background="#FFF8E1">
+    android:background="#0A0E2A">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="قرآن للاطفال"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#1B5E20"
-        android:layout_marginBottom="48dp"/>
-
-    <Button
-        android:id="@+id/buttonStart"
+    <!-- الجزء العلوي -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="بدء الحفظ"
-        android:backgroundTint="#2E7D32"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
 
-    <Button
-        android:id="@+id/buttonSettings"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌙⭐"
+            android:textSize="48sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تطبيق تحفيظ القرآن"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ للأطفال ⭐"
+            android:textSize="18sp"
+            android:textColor="#7986CB"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 🌟🌟 "
+            android:textSize="22sp"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+    <!-- الجزء السفلي -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="الإعدادات / حول التطبيق"
-        android:backgroundTint="#1565C0"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:background="#0D1333">
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🚀  بدء الحفظ"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="⚙  الإعدادات / حول التطبيق"
+            android:backgroundTint="#1A237E"
+            android:textColor="#7986CB"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌙 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ 🌙"
+            android:textSize="14sp"
+            android:textColor="#7986CB"/>
+
+    </LinearLayout>
 
 </LinearLayout>
